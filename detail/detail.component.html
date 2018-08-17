@@ -1,0 +1,10 @@
+<a [routerLink]="['/pets']">Home</a>
+
+<h3>Details about {{pet.name}}</h3>
+<h4> <span>Pet type: </span> </h4> <p>{{pet.animal}}</p>
+<h4> <span>Description: </span> </h4> <p>{{pet.desc}}</p>
+<h4> <span>Skills: </span> </h4><p>{{pet.skill1}}</p><p>{{pet.skill2}}</p><p>{{pet.skill3}}</p>
+<h4> <span>Likes: </span> </h4><p>{{pet.likes}}</p>
+
+<button (click)="onClickLike(pet._id, pet)">Like this pet</button>
+<button (click)="onClickDelete(pet._id)">Adopt this pet!</button>
